@@ -1,0 +1,11 @@
+$prim: orange;
+
+@mixin back()
+{
+	background-color: $prim;
+}
+
+body
+{
+	@include back();
+}
