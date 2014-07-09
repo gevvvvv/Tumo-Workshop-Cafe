@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
 <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php cafe_page_id(); body_class(); ?>>
 <div id="wrapper" class="hfeed">
 <header id="header" role="banner">
 <section id="branding">

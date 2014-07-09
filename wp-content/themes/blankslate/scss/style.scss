@@ -1,11 +1,78 @@
-$prim: orange;
+@import "reset";
+@import "home";
+@import "about";
+@import "news";
+@import "contact";
+@import "menu";
 
-@mixin back()
+
+
+/*TEMPLATE*/
+
+
+@font-face
 {
-	background-color: $prim;
+	font-family: handWritten;
+	src: url('fonts/jennasue-webfont.eot')
+		,url('fonts/jennasue-webfont.ttf')
+		,url('fonts/jennasue-webfont.woff');
 }
+
 
 body
 {
-	@include back();
+	background-color: #e5e0e0;
+	margin: 0;
+
 }
+
+.menu
+{
+	width: 960px;
+	height: 90px;
+	background-color: #ffffff;
+	border-radius: 18px;
+	box-shadow: 11px 10px 34px #888888;
+	margin-top: 100px;
+
+	ul {
+
+		li {
+			a
+			{
+				text-decoration: none;
+				font-size: 54px;
+				font-family: handWritten;
+				padding: 30px;
+				color: #000000;
+			}
+		}
+		li.page-item-5
+		{
+			a
+			{
+				content: none;
+				background-image: url('scss/images/logo.png');
+			}
+		}
+		li.page_item_has_children {
+			.children {
+				display: none;
+			}
+		}
+	}
+	ul
+	{
+		list-style-type: none;
+		margin-left: 14px;
+		padding: 0;
+		display: block;
+		
+	}
+	ul,li
+	{
+		float: left;
+		margin-top: 5px;
+	}
+}
+

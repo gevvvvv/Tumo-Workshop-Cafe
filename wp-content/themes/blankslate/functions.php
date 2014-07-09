@@ -63,4 +63,18 @@ return count( $comments_by_type['comment'] );
 } else {
 return $count;
 }
+
+}
+function cafe_page_id() {
+    global $wp_query;
+    $page = '';
+    if (is_front_page() ) {
+        $page = 'home';
+    } elseif (is_page()) {
+        $page = $wp_query->query_vars["pagename"];
+    } elseif (is_archive()){
+        $page = $wp_query->query_vars["post_type"];
+    }
+
+    echo 'id="'. $page. '"';
 }
