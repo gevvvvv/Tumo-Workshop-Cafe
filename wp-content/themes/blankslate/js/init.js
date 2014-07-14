@@ -15,10 +15,10 @@ UTIL = {
 
         // hit up common first.
         UTIL.fire('common');
-
+        UTIL.fire(bodyId);
         // do all the classes too.
         $.each(document.body.className.split(/\s+/),function(i,classnm){
-            UTIL.fire(bodyId);
+            
             UTIL.fire(bodyId,classnm);
         });
 
@@ -26,5 +26,5 @@ UTIL = {
     }
 };
 
-// kick it all off here
+// kick it all off her
 $(document).ready(UTIL.loadEvents);

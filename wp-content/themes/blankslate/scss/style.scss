@@ -1,9 +1,5 @@
 @import "reset";
-@import "home";
-@import "about";
-@import "news";
-@import "contact";
-@import "menu";
+
 
 
 
@@ -26,18 +22,48 @@ body
 
 }
 
-.menu
+#wrapper
+{
+	width: 960px;
+	margin: 0px auto;
+}
+
+
+#menu
+{
+	width: 960px;
+	margin: 0px auto;
+	margin-top: 100px;
+}
+
+#comments{
+	display:none;
+}
+
+h1 {
+	margin: 0px;
+	padding-top: 10px;
+	text-align: center;
+	color: #A8CD4A;
+	font-family: handWritten;
+	font-weight: initial;
+	font-size: 70px;
+}
+
+
+.menu-menu-container
 {
 	width: 960px;
 	height: 90px;
 	background-color: #ffffff;
 	border-radius: 18px;
 	box-shadow: 11px 10px 34px #888888;
-	margin-top: 100px;
+
 
 	ul {
 
 		li {
+			margin-top: 13px;
 			a
 			{
 				text-decoration: none;
@@ -46,17 +72,40 @@ body
 				padding: 30px;
 				color: #000000;
 			}
+			a:hover
+			{
+				color: #A8CD4A;
+			}
 		}
-		li.page-item-5
+		li#menu-item-52
 		{
+			margin-top: -41.5px;
+			width: 205px;
+			height: 178px;
 			a
 			{
 				content: none;
-				background-image: url('scss/images/logo.png');
+				display: block;
+				background-image: url("images/logo.png");
+				margin: 0px;
+				padding: 0px;
+				width: 205px;
+				height: 178px;
+				background-repeat: no-repeat;
+				color: rgba(0,0,0,0);
 			}
+			a:hover
+			{
+				color: rgba(0,0,0,0);
+			}
+
+			
+
 		}
-		li.page_item_has_children {
-			.children {
+
+
+		li.menu-item-has-children {
+			.sub-menu {
 				display: none;
 			}
 		}
@@ -64,7 +113,7 @@ body
 	ul
 	{
 		list-style-type: none;
-		margin-left: 14px;
+		margin-left: 85px;
 		padding: 0;
 		display: block;
 		
@@ -76,3 +125,35 @@ body
 	}
 }
 
+
+#container
+{
+	margin: 0px auto;
+	margin-top: 100px;
+	background-color: #ffffff;
+	width: 910px;
+	border-radius: 18px;
+	box-shadow: 11px 10px 34px #888888;
+	padding: 25px;
+}
+
+
+#footer
+{
+	width: 910px;
+	height: 40px;
+	background-color: #ffffff;
+	border-radius: 18px;
+	box-shadow: 11px 10px 34px #888888;
+	padding: 25px;
+	margin-top: 40px;
+	margin-bottom: 15px;
+}
+
+
+
+@import "home";
+@import "about";
+@import "news";
+@import "contact";
+@import "menu";
