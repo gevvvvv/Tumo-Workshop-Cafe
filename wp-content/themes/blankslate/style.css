@@ -1,0 +1,283 @@
+<<<<<<< HEAD
+=======
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*TEMPLATE*/
+@font-face {
+  font-family: handWritten;
+  src: url("fonts/jennasue-webfont.eot"), url("fonts/jennasue-webfont.ttf"), url("fonts/jennasue-webfont.woff");
+}
+
+/* line 19, scss/style.scss */
+body {
+  background-color: #e5e0e0;
+  margin: 0;
+}
+
+/* line 26, scss/style.scss */
+#wrapper {
+  width: 960px;
+  margin: 0px auto;
+}
+
+/* line 33, scss/style.scss */
+#menu {
+  width: 960px;
+  margin: 0px auto;
+  margin-top: 100px;
+}
+
+/* line 39, scss/style.scss */
+#comments {
+  display: none;
+}
+
+/* line 43, scss/style.scss */
+h1 {
+  margin: 0px;
+  padding-top: 10px;
+  text-align: center;
+  color: #A8CD4A;
+  font-family: handWritten;
+  font-weight: initial;
+  font-size: 70px;
+}
+
+/* line 55, scss/style.scss */
+.menu-menu-container {
+  width: 960px;
+  height: 90px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 11px 10px 34px #888888;
+}
+/* line 65, scss/style.scss */
+.menu-menu-container ul li {
+  margin-top: 13px;
+}
+/* line 68, scss/style.scss */
+.menu-menu-container ul li a {
+  text-decoration: none;
+  font-size: 54px;
+  font-family: handWritten;
+  padding: 30px;
+  color: #000000;
+}
+/* line 76, scss/style.scss */
+.menu-menu-container ul li a:hover {
+  color: #A8CD4A;
+}
+/* line 81, scss/style.scss */
+.menu-menu-container ul li#menu-item-52 {
+  margin-top: -41.5px;
+  width: 205px;
+  height: 178px;
+}
+/* line 86, scss/style.scss */
+.menu-menu-container ul li#menu-item-52 a {
+  content: none;
+  display: block;
+  background-image: url("images/logo.png");
+  margin: 0px;
+  padding: 0px;
+  width: 205px;
+  height: 178px;
+  background-repeat: no-repeat;
+  color: rgba(0, 0, 0, 0);
+}
+/* line 98, scss/style.scss */
+.menu-menu-container ul li#menu-item-52 a:hover {
+  color: rgba(0, 0, 0, 0);
+}
+/* line 108, scss/style.scss */
+.menu-menu-container ul li.menu-item-has-children .sub-menu {
+  display: none;
+}
+/* line 114, scss/style.scss */
+.menu-menu-container ul {
+  list-style-type: none;
+  margin-left: 85px;
+  padding: 0;
+  display: block;
+}
+/* line 122, scss/style.scss */
+.menu-menu-container ul, .menu-menu-container li {
+  float: left;
+  margin-top: 5px;
+}
+
+/* line 130, scss/style.scss */
+#container {
+  margin: 0px auto;
+  margin-top: 100px;
+  background-color: #ffffff;
+  width: 910px;
+  border-radius: 18px;
+  box-shadow: 11px 10px 34px #888888;
+  padding: 25px;
+}
+
+/* line 142, scss/style.scss */
+#footer {
+  width: 910px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 11px 10px 34px #888888;
+  padding: 25px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+/* line 1, scss/_home.scss */
+.metaslider {
+  width: 701px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+/* line 7, scss/_home.scss */
+#welcome {
+  line-height: 0px;
+  font-size: 52px;
+  font-family: handWritten;
+  color: #A8CD4A;
+}
+
+/* line 14, scss/_home.scss */
+.poetry {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 18px;
+  line-height: 8px;
+}
+
+/* line 1, scss/_about.scss */
+.about_text {
+  text-indent: 32px;
+  font-size: 16px;
+  font-family: Arial;
+  text-align: justify;
+  line-height: 23px;
+  color: #303030;
+}
+
+/* line 9, scss/_about.scss */
+#aboutImg {
+  width: 400px;
+  height: 234px;
+  border-radius: 10px;
+  float: right;
+  margin-left: 35px;
+  margin-top: 5px;
+}
+
+/* line 1, scss/_contact.scss */
+.wpcf7-text, .wpcf7-captchar {
+  width: 32em;
+  height: 3em;
+  transition: all .5s;
+  padding: 0 7px;
+  margin: 10px 0;
+  outline-color: #A8CD4A;
+  color: #000;
+}
+
+/* line 11, scss/_contact.scss */
+.wpcf7-text:focus, .wpcf7-captchar:focus {
+  width: 67em;
+}
+
+/* line 15, scss/_contact.scss */
+.wpcf7-textarea {
+  width: 32em;
+  height: 195px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  padding: 6px 7px;
+  margin: 10px 0px;
+  outline-color: #a8cd4a;
+  color: black;
+  resize: vertical;
+}
+
+/* line 27, scss/_contact.scss */
+.wpcf7-textarea:focus {
+  width: 67em;
+}
+
+/* line 31, scss/_contact.scss */
+.wpcf7-submit {
+  width: 120px;
+  height: 40px;
+  border: 1px;
+  transition: all 0.5s;
+  outline-color: #a8cd4a;
+  background: #a8cd4a;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* line 42, scss/_contact.scss */
+.first_label {
+  margin-top: 10px;
+}
+>>>>>>> a5b5e7978b4a7c2f20797985808865c3250a21d0

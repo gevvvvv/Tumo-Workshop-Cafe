@@ -22,7 +22,9 @@ define('DB_NAME', 'ws_cafe');
 define('DB_USER', 'ws_cafe');
 
 /** MySQL database password */
+
 define('DB_PASSWORD', 'cafe');
+
 
 /** MySQL hostname */
 define('DB_HOST', '10.88.32.205');

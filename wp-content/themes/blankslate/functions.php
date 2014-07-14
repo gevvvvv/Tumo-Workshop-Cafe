@@ -63,4 +63,48 @@ return count( $comments_by_type['comment'] );
 } else {
 return $count;
 }
+
+}
+function cafe_page_id() {
+	global $wp_query;
+	$page = '';
+	if (is_front_page() ) {
+		$page = 'home';
+	} elseif (is_page()) {
+		$page = $wp_query->query_vars["pagename"];
+	} elseif (is_archive()){
+		$page = $wp_query->query_vars["post_type"];
+	}
+
+	echo 'id="'.$page.'"';
+}
+
+add_action( 'init', 'post_type_characters' );
+
+function post_type_characters() {
+	$labels = array(
+		'name'               => _x( 'Foods', 'post type general name' ),
+		'singular_name'      => _x( 'food', 'post type singular name' ),
+		'add_new'            => _x( 'Add New', 'food' ),
+		'add_new_item'       => __( 'Add New food' ),
+		'edit_item'          => __( 'Edit food' ),
+		'new_item'           => __( 'New food' ),
+		'all_items'          => __( 'All Foods' ),
+		'view_item'          => __( 'View food' ),
+		'search_items'       => __( 'Search Foods' ),
+		'not_found'          => __( 'No foods found' ),
+		'not_found_in_trash' => __( 'No foods found in the Trash' ),
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Foods'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'Holds our foods and food specific data',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'editor', 'thumbnail', ),
+		'has_archive'   => true,
+		'rewrite'       => array('slug' => 'foods')
+	);
+	register_post_type( 'food', $args );
 }

@@ -1,8 +1,5 @@
-app.common = {
-    init: function(){
-  
-    },
-    finalize: function(){
-
-    }
+app.common = 
+{
+    init: function(){},
+    finalize: function(){}
 };
