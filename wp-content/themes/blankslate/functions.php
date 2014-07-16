@@ -102,7 +102,8 @@ function post_type_characters() {
 		'description'   => 'Holds our foods and food specific data',
 		'public'        => true,
 		'menu_position' => 5,
-		'supports'      => array( 'title', 'editor', 'thumbnail', ),
+		'taxonomies'	=> array('category'),
+		'supports'      => array( 'title', 'editor', 'thumbnail' ),
 		'has_archive'   => true,
 		'rewrite'       => array('slug' => 'foods')
 	);
