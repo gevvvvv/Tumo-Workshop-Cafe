@@ -29,16 +29,13 @@ body
 }
 
 
-#menu
+#main_menu
 {
 	width: 960px;
 	margin: 0px auto;
 	margin-top: 100px;
 }
 
-#comments{
-	display:none;
-}
 
 h1 {
 	margin: 0px;
@@ -48,8 +45,13 @@ h1 {
 	font-family: handWritten;
 	font-weight: initial;
 	font-size: 70px;
+	line-height:80px;
 }
 
+#content .header
+{
+	margin-bottom: 15px;
+}
 
 .menu-menu-container
 {

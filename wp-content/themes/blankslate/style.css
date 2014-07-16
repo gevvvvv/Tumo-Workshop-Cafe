@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -80,18 +78,13 @@ body {
 }
 
 /* line 33, scss/style.scss */
-#menu {
+#main_menu {
   width: 960px;
   margin: 0px auto;
   margin-top: 100px;
 }
 
-/* line 39, scss/style.scss */
-#comments {
-  display: none;
-}
-
-/* line 43, scss/style.scss */
+/* line 40, scss/style.scss */
 h1 {
   margin: 0px;
   padding-top: 10px;
@@ -100,9 +93,15 @@ h1 {
   font-family: handWritten;
   font-weight: initial;
   font-size: 70px;
+  line-height: 80px;
 }
 
-/* line 55, scss/style.scss */
+/* line 52, scss/style.scss */
+#content .header {
+  margin-bottom: 15px;
+}
+
+/* line 57, scss/style.scss */
 .menu-menu-container {
   width: 960px;
   height: 90px;
@@ -110,11 +109,11 @@ h1 {
   border-radius: 18px;
   box-shadow: 11px 10px 34px #888888;
 }
-/* line 65, scss/style.scss */
+/* line 67, scss/style.scss */
 .menu-menu-container ul li {
   margin-top: 13px;
 }
-/* line 68, scss/style.scss */
+/* line 70, scss/style.scss */
 .menu-menu-container ul li a {
   text-decoration: none;
   font-size: 54px;
@@ -122,17 +121,17 @@ h1 {
   padding: 30px;
   color: #000000;
 }
-/* line 76, scss/style.scss */
+/* line 78, scss/style.scss */
 .menu-menu-container ul li a:hover {
   color: #A8CD4A;
 }
-/* line 81, scss/style.scss */
+/* line 83, scss/style.scss */
 .menu-menu-container ul li#menu-item-52 {
   margin-top: -41.5px;
   width: 205px;
   height: 178px;
 }
-/* line 86, scss/style.scss */
+/* line 88, scss/style.scss */
 .menu-menu-container ul li#menu-item-52 a {
   content: none;
   display: block;
@@ -144,28 +143,28 @@ h1 {
   background-repeat: no-repeat;
   color: rgba(0, 0, 0, 0);
 }
-/* line 98, scss/style.scss */
+/* line 100, scss/style.scss */
 .menu-menu-container ul li#menu-item-52 a:hover {
   color: rgba(0, 0, 0, 0);
 }
-/* line 108, scss/style.scss */
+/* line 110, scss/style.scss */
 .menu-menu-container ul li.menu-item-has-children .sub-menu {
   display: none;
 }
-/* line 114, scss/style.scss */
+/* line 116, scss/style.scss */
 .menu-menu-container ul {
   list-style-type: none;
   margin-left: 85px;
   padding: 0;
   display: block;
 }
-/* line 122, scss/style.scss */
+/* line 124, scss/style.scss */
 .menu-menu-container ul, .menu-menu-container li {
   float: left;
   margin-top: 5px;
 }
 
-/* line 130, scss/style.scss */
+/* line 132, scss/style.scss */
 #container {
   margin: 0px auto;
   margin-top: 100px;
@@ -176,7 +175,7 @@ h1 {
   padding: 25px;
 }
 
-/* line 142, scss/style.scss */
+/* line 144, scss/style.scss */
 #footer {
   width: 910px;
   height: 40px;
@@ -188,30 +187,44 @@ h1 {
   margin-bottom: 15px;
 }
 
-/* line 1, scss/_home.scss */
-.metaslider {
-  width: 701px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+/* line 4, scss/_home.scss */
+#home .metaslider {
+  margin: 0px auto;
+  height: 400px;
 }
-
-/* line 7, scss/_home.scss */
-#welcome {
+/* line 9, scss/_home.scss */
+#home .metaslider .cs-buttons a {
+  height: 20px;
+  width: 20px;
+}
+/* line 15, scss/_home.scss */
+#home #welcome {
   line-height: 0px;
   font-size: 52px;
   font-family: handWritten;
   color: #A8CD4A;
 }
-
-/* line 14, scss/_home.scss */
-.poetry {
+/* line 22, scss/_home.scss */
+#home .poetry {
   font-family: Arial,Helvetica,sans-serif;
   font-size: 18px;
-  line-height: 8px;
+  line-height: 30px;
+}
+/* line 29, scss/_home.scss */
+#home .poetry[id="heading"] {
+  font-size: 52px;
+  font-family: handWritten;
+  color: #A8CD4A;
+  margin-bottom: 16px;
+  line-height: 52px;
 }
 
-/* line 1, scss/_about.scss */
-.about_text {
+/* line 5, scss/_about.scss */
+#about-us ul #menu-item-50 a {
+  color: #A8CD4A;
+}
+/* line 11, scss/_about.scss */
+#about-us .about_text {
   text-indent: 32px;
   font-size: 16px;
   font-family: Arial;
@@ -219,9 +232,8 @@ h1 {
   line-height: 23px;
   color: #303030;
 }
-
-/* line 9, scss/_about.scss */
-#aboutImg {
+/* line 19, scss/_about.scss */
+#about-us #aboutImg {
   width: 400px;
   height: 234px;
   border-radius: 10px;
@@ -230,8 +242,22 @@ h1 {
   margin-top: 5px;
 }
 
-/* line 1, scss/_contact.scss */
-.wpcf7-text, .wpcf7-captchar {
+/* line 5, scss/_news.scss */
+#news ul #menu-item-57 a {
+  color: #A8CD4A;
+}
+
+/* line 5, scss/_contact.scss */
+#contact-us ul #menu-item-51 a {
+  color: #A8CD4A;
+}
+/* line 11, scss/_contact.scss */
+#contact-us p {
+  font-size: 20px;
+  color: #a8cd4a;
+}
+/* line 16, scss/_contact.scss */
+#contact-us .wpcf7-text, #contact-us .wpcf7-captchar {
   width: 32em;
   height: 3em;
   transition: all .5s;
@@ -240,14 +266,12 @@ h1 {
   outline-color: #A8CD4A;
   color: #000;
 }
-
-/* line 11, scss/_contact.scss */
-.wpcf7-text:focus, .wpcf7-captchar:focus {
+/* line 26, scss/_contact.scss */
+#contact-us .wpcf7-text:focus, #contact-us .wpcf7-captchar:focus {
   width: 67em;
 }
-
-/* line 15, scss/_contact.scss */
-.wpcf7-textarea {
+/* line 30, scss/_contact.scss */
+#contact-us .wpcf7-textarea {
   width: 32em;
   height: 195px;
   transition: all 0.5s;
@@ -258,14 +282,12 @@ h1 {
   color: black;
   resize: vertical;
 }
-
-/* line 27, scss/_contact.scss */
-.wpcf7-textarea:focus {
+/* line 42, scss/_contact.scss */
+#contact-us .wpcf7-textarea:focus {
   width: 67em;
 }
-
-/* line 31, scss/_contact.scss */
-.wpcf7-submit {
+/* line 46, scss/_contact.scss */
+#contact-us .wpcf7-submit {
   width: 120px;
   height: 40px;
   border: 1px;
@@ -275,9 +297,12 @@ h1 {
   color: #fff;
   cursor: pointer;
 }
-
-/* line 42, scss/_contact.scss */
-.first_label {
+/* line 57, scss/_contact.scss */
+#contact-us .first_label {
   margin-top: 10px;
 }
->>>>>>> a5b5e7978b4a7c2f20797985808865c3250a21d0
+
+/* line 5, scss/_menu.scss */
+#menu ul #menu-item-53 a {
+  color: #A8CD4A;
+}

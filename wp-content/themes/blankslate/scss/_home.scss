@@ -1,18 +1,36 @@
-.metaslider{
-	width: 701px;
-	margin: 0 auto;
-	margin-bottom: 30px;
-}
+#home
+{
+	.metaslider
+	{
+		margin: 0px auto;
+		height: 400px;
 
-#welcome {
-	line-height: 0px;
-	font-size: 52px;
-	font-family: handWritten;
-	color: #A8CD4A;
-}
+		.cs-buttons a
+		{
+			height: 20px;
+			width: 20px;
+		}
+	}
 
-.poetry {
-	font-family: Arial,Helvetica,sans-serif;
-	font-size: 18px;
-	line-height: 8px;
+	#welcome {
+		line-height: 0px;
+		font-size: 52px;
+		font-family: handWritten;
+		color: #A8CD4A;
+	}
+
+	.poetry {
+		font-family: Arial,Helvetica,sans-serif;
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	.poetry[id="heading"]
+	{
+		font-size: 52px;
+		font-family: handWritten;
+		color: #A8CD4A;
+		margin-bottom: 16px;
+		line-height: 52px;
+	}
 }
