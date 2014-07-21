@@ -1,0 +1,67 @@
+#contact-us
+{
+	ul{
+		#menu-item-51{
+			a{
+				color: #A8CD4A;
+			}
+		}
+	}
+
+	p{
+		color: #a8cd4a;	
+
+		span {
+			color: rgb(207, 42, 42);
+		}
+	}
+
+
+
+	.wpcf7-text, .wpcf7-captchar{
+		width: 32em;
+		height: 3em;
+		transition: all .5s;
+		padding: 0 7px;
+		margin: 10px 0;
+		outline-color: #A8CD4A;
+		color: #000;
+	}
+
+
+	.wpcf7-textarea{
+		width: 67em;
+		height: 195px;
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		padding: 6px 7px;
+		margin: 10px 0px;
+		outline-color: #a8cd4a;
+		color: black;
+		resize: vertical;
+	}
+
+	.wpcf7-textarea:focus{
+		width: 67em;
+	}
+
+	.wpcf7-submit{
+		width: 120px;
+		height: 40px;
+		border: 1px;
+		transition: all 0.5s;
+		outline-color: rgb(168, 205, 74);
+		background: rgb(168, 205, 74);
+		color: #fff;
+		cursor: pointer;
+	}
+	.first_label {
+		margin-top: 10px;
+	}
+	.second_label {
+		position: absolute;
+		margin-top: -80px;
+		margin-left: 29em;
+	}
+}
+

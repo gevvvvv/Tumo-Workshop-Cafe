@@ -1,0 +1,167 @@
+@import "reset";
+
+
+
+
+/*TEMPLATE*/
+
+
+@font-face
+{
+	font-family: handWritten;
+	src: url('fonts/jennasue-webfont.eot')
+		,url('fonts/jennasue-webfont.ttf')
+		,url('fonts/jennasue-webfont.woff');
+}
+
+
+body
+{
+	background-color: #e5e0e0;
+	margin: 0;
+
+}
+
+#wrapper
+{
+	width: 960px;
+	margin: 0px auto;
+}
+
+
+#main_menu
+{
+	width: 960px;
+	margin: 0px auto;
+	margin-top: 100px;
+}
+
+
+h1 {
+	margin: 0px;
+	padding-top: 10px;
+	text-align: center;
+	color: #A8CD4A;
+	font-family: handWritten;
+	font-weight: initial;
+	font-size: 70px;
+	line-height:80px;
+}
+
+#content .header
+{
+	margin-bottom: 15px;
+}
+
+.menu-menu-container
+{
+	width: 960px;
+	height: 90px;
+	background-color: #ffffff;
+	border-radius: 18px;
+	box-shadow: 11px 10px 34px #888888;
+
+
+	ul {
+
+		li {
+			margin-top: 13px;
+			a
+			{
+				text-decoration: none;
+				font-size: 54px;
+				font-family: handWritten;
+				padding: 30px;
+				color: #000000;
+			}
+			a:hover
+			{
+				color: #A8CD4A;
+			}
+		}
+		li#menu-item-52
+		{
+			margin-top: -41.5px;
+			width: 205px;
+			height: 178px;
+			a
+			{
+				content: none;
+				display: block;
+				background-image: url("images/logo.png");
+				margin: 0px;
+				padding: 0px;
+				width: 205px;
+				height: 178px;
+				background-repeat: no-repeat;
+				color: rgba(0,0,0,0);
+			}
+			a:hover
+			{
+				color: rgba(0,0,0,0);
+			}
+
+			
+
+		}
+
+
+		li.menu-item-has-children {
+			.sub-menu {
+				display: none;
+			}
+		}
+	}
+	ul
+	{
+		list-style-type: none;
+		margin-left: 85px;
+		padding: 0;
+		display: block;
+		
+	}
+	ul,li
+	{
+		float: left;
+		margin-top: 5px;
+	}
+}
+
+
+#container
+{
+	margin: 0px auto;
+	margin-top: 100px;
+	background-color: #ffffff;
+	width: 910px;
+	border-radius: 18px;
+	box-shadow: 11px 10px 34px #888888;
+	padding: 25px;
+}
+
+
+#footer
+{
+	width: 910px;
+	height: 40px;
+	background-color: #ffffff;
+	border-radius: 18px;
+	box-shadow: 11px 10px 34px #888888;
+	padding: 25px;
+	margin-top: 40px;
+	margin-bottom: 15px;
+
+	#copyright
+	{
+		height: 40px;
+		line-height: 40px;
+	}
+}
+
+
+
+@import "home";
+@import "about";
+@import "news";
+@import "contact";
+@import "menu";
