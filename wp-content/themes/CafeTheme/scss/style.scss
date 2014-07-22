@@ -13,13 +13,11 @@
 		,url('fonts/jennasue-webfont.ttf')
 		,url('fonts/jennasue-webfont.woff');
 }
-
-
 body
 {
 	background-color: #e5e0e0;
 	margin: 0;
-
+	font-family: Arial;
 }
 
 #wrapper
@@ -36,6 +34,9 @@ body
 	margin-top: 100px;
 }
 
+.clear{
+	clear: both;
+}
 
 h1 {
 	margin: 0px;

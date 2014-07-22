@@ -43,10 +43,13 @@ foreach($items as $item){
 		<p class="entry-title"><?php echo $item->post_title;?></p>
 		</header>
 		<section class="entry-content">
+		
 		<?php echo $item->post_content;?>
+		<p class="product_price"><span>Price - </span><?php echo $item->meta['price']; ?></p>
+		
 		</section>
-		<p><?=$item->meta['price'];?></p>
 		</article>
+		<div class="clear"></div>
 	<?php endforeach; ?>
 <?php endforeach; ?>
 

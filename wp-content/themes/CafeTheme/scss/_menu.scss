@@ -7,4 +7,27 @@
 				}
 			}
 		}
+		.entry-content {
+		img {
+			float: left;
+		}
+		.text_description {
+			width: 220px;
+			float: left;
+			margin-left: 50px;
+			font-size: 18px;
+		}
+
+		.product_price {
+			font-size: 18px;
+			margin-top: 15px;
+			width: 190px;
+			float: right;
+			margin-right: 55px;
+		}
+	}
+
+
+
+}
 }
