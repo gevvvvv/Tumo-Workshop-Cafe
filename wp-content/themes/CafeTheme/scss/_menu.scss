@@ -8,10 +8,12 @@
 			}
 		}
 		.entry-content {
+		
 		img {
 			float: left;
 		}
 		.text_description {
+			
 			width: 220px;
 			float: left;
 			margin-left: 50px;
@@ -26,8 +28,17 @@
 			margin-right: 55px;
 		}
 	}
+		.article {
+			border-radius: 10px;
+			background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #EEEEEE 100%);
+		margin-top: 60px;
+		width: 550px;
+		margin: 0 auto;
+		header {
+			margin-top: 50px;
+		}
+	}
 
 
 
-}
 }
