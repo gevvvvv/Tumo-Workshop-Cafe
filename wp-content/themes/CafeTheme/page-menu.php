@@ -49,7 +49,7 @@ foreach($items as $item){
 		
 		</section>
 		</article>
-		<div class="clear"></div>
+		
 	<?php endforeach; ?>
 <?php endforeach; ?>
 
