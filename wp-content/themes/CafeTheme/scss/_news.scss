@@ -1,16 +1,29 @@
 #news
-{
-	ul{
-		#menu-item-57{
-			a{
-				color: #A8CD4A;
+{	
+	#container {
+
+		article {
+			width: 800px;
+			margin: 0 auto;
+			margin-bottom: 75px;
+
+			header {
+				h2 {
+					text-decoration: none;
+					font-size: 54px;
+					font-family: handWritten;
+					color: #A8CD4A;
+					margin-bottom: 15px;
+					margin-top: 20px;
+				}
+			}
+
+			section {
+				text-align: justify;
+				line-height: 1.3;
 			}
 		}
-	}
 
-	.entry-title {
-	font-size: 22px;
-	font-weight: bold;
-	margin-bottom: 12px;
 	}
 }
+

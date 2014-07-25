@@ -7,18 +7,22 @@
 				}
 			}
 		}
+		#content{
+
+			h2 {
+				text-decoration: none;
+				font-size: 54px;
+				font-family: handWritten;
+				padding: 0px;
+				color: #A8CD4A;
+				text-align: center;
+				margin-top: 25px;
+			}
+		}
 		.entry-content {
 			margin-left: 5px;
 			color: rgb(109, 109, 109);
-		
-		h2 {
-			text-decoration: none;
-			font-size: 54px;
-			font-family: handWritten;
-			padding: 30px;
-			color: #A8CD4A;
-			text-align: center;
-		}
+	
 
 		img {
 			float: left;
