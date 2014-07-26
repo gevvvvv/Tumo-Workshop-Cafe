@@ -75,6 +75,10 @@ function cafe_page_id() {
 	} elseif (is_archive()){
 		$page = $wp_query->query_vars["post_type"];
 	}
+	if($page === null || $page === "")
+	{
+		$page = "news";
+	}
 
 	echo 'id="'.$page.'"';
 }

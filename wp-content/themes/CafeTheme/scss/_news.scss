@@ -2,25 +2,47 @@
 {	
 	#container {
 
-		article {
+		article.post {
 			width: 800px;
-			margin: 0 auto;
 			margin-bottom: 75px;
 
 			header {
 				h2 {
-					text-decoration: none;
-					font-size: 54px;
-					font-family: handWritten;
-					color: #A8CD4A;
-					margin-bottom: 15px;
-					margin-top: 20px;
+					// text-decoration: none;
+					// font-size: 54px;
+					// font-family: handWritten;
+					// color: #A8CD4A;
+					// margin-bottom: 15px;
+					// margin-top: 20px;
+					font-family: Arial;
+					font-weight: initial;
+					font-size: 27px;
+					margin-left: 321px;
+					i{
+						font-size: 17px;
+						color: #7A7A7A;
+						margin-left: 10px;
+					}
 				}
 			}
 
-			section {
+			section.entry-content {
+				// text-align: justify;
+				// line-height: 1.3;
+				font-size: 16px;
+				font-family: Arial;
 				text-align: justify;
-				line-height: 1.3;
+				line-height: 23px;
+				color: #303030;
+				width: 884px;
+				margin-left: 37px;
+				p{
+					display: inline-block;
+					img{
+						width: 270px;
+						border-radius: 15px;
+					}
+				}
 			}
 		}
 

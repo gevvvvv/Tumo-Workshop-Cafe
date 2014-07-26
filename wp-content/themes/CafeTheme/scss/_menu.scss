@@ -1,8 +1,16 @@
-#menu
+#menu,#food,#drink,#dessert
 {
 		ul{
 			#menu-item-53{
 				a{
+					color: #A8CD4A;
+				}
+				.sub-menu a
+				{
+					color: #000000;
+				}
+				.sub-menu a:hover
+				{
 					color: #A8CD4A;
 				}
 			}
@@ -66,3 +74,56 @@
 
 
 }
+
+
+
+
+#food
+{
+	ul
+	{
+		#menu-item-53 a{
+					color: #000;
+				}
+		.sub-menu 
+		{
+			#menu-item-55 a
+			{
+				color: #A8CD4A;;
+			}
+		}
+	}
+}
+#drink
+{
+	ul
+	{
+		#menu-item-53 a{
+					color: #000;
+				}
+		.sub-menu 
+		{
+			#menu-item-54 a
+			{
+				color: #A8CD4A;;
+			}
+		}
+	}
+}
+#dessert
+{
+	ul
+	{
+		#menu-item-53 a{
+					color: #000;
+				}
+		.sub-menu 
+		{
+			#menu-item-243 a
+			{
+				color: #A8CD4A;;
+			}
+		}
+	}
+}
+

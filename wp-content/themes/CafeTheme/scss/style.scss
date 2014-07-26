@@ -79,6 +79,10 @@ h1 {
 				color: #A8CD4A;
 			}
 		}
+		li#menu-item-53
+		{
+			width: 152px;
+		}
 		li#menu-item-52
 		{
 			margin-top: -41.5px;
@@ -109,6 +113,19 @@ h1 {
 		li.menu-item-has-children {
 			.sub-menu {
 				display: none;
+				margin-left: 0px;
+				background-color: #ffffff;
+				border-radius: 15px;
+				box-shadow: 0px 26px 60px -20px #888888;
+				position: absolute;
+				z-index: 5;
+				border-radius: 15px;
+				float: left;
+				li{
+					margin-top: 13px;
+					display: block;
+					float: none;
+				}
 			}
 		}
 	}
@@ -180,3 +197,4 @@ h1 {
 @import "news";
 @import "contact";
 @import "menu";
+
